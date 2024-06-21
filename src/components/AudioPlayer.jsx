@@ -31,7 +31,8 @@ const AudioPlayer = ({ selectedTrackNumber }) => {
         <p>TITULO</p>
         <h3>{selectedTrack.title}</h3>
         <audio ref={audioRef} controls>
-          <source src={`/src/assets/songs/${selectedTrack.url}`} type="audio/mp3" />
+          {/* <source src={`/src/assets/songs/${selectedTrack.url}`} type="audio/mp3" /> */}
+          <source src={selectedTrack.url} type="audio/mp3" />
           Tu navegador no soporta la etiqueta de audio.
         </audio>
         <p></p>

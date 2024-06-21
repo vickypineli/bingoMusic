@@ -1,17 +1,17 @@
 const tracks = [
       { 
         number: '1',
-        url:"grease.mp3",
+        url:"src/assets/songs/grease.mp3",
         title: "Olivia Newton John. John Travolta - GREASE "
       },
       {
         number: '2',
-        url:"Kortatu - Sarri Sarri.mp3",
+        url:"src/assets/songs/Kortatu - Sarri Sarri.mp3",
         title: "Kortatu - Sarri Sarri"
       },
       {
         number: '3',
-        url:"Camilo Sesto - Vivir Así Es Morir de Amor.mp3",
+        url:"src/assets/songs/Camilo Sesto - Vivir Así Es Morir de Amor.mp3",
         title: "Camilo Sesto - Vivir Así Es Morir de Amor"
       },
       { 
