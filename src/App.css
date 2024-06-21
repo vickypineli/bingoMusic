@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  background-color: #1b1b1b;
+  width: 100vw;
+  height: 60vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* =====================WELCOMESCREEN=========================== */
+.welcome-container {
+  width: 70%;
+  margin: auto;
+  padding:10px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  border : 1px solid red;
+  border-radius: 5px;
+}
+
+.welcome-container h1 {
+  font-size: 3em;
+}
+
+.welcome-container p {
+  padding: 10px 0;
+  font-size: 1em;
+}
+
+.welcome-img  {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-container .welcome-img img {
+  width: 50%;
+  margin: auto;
+}
+
+.welcome-text {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.welcome-container button {
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;  
+  background-color: red;
+  color:#DEDEDE;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container button:hover {
+  background-color: #DEDEDE;
+  color: red;
+}
+
+
+/* ============NumberGenerator=========================== */
+.number-container {
+  margin: auto;
+  display: block;
+  flex-direction: column;
+}
+
+.number-box {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: beige;
+  border-radius: 5px;
+}
+
+.number-box p {
+  font-size: 10rem;
+  color: black;
+}
+
+.number-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.number-buttons button {
+  width: 100%;
+  margin: 5px auto;
+  background-color: red;
+  color: #DEDEDE;
+  border: none;
+  border-radius: 5px;
+  padding: 30px 20px;
+  font-size: 2em;
+  cursor: pointer;  
+}
+
+.number-buttons button:hover {
+  background-color: #ff000000;
+  color: red;
+  border: 1px solid red;
+}
+
+/* ============TABLE-NUMBERS=========================== */
+.table-numbers {
+  width: 40%;
+  margin: auto;
+}
+
+.table-numbers table {
+  width: 100%;
+  margin: auto;
+}
+
+.table-numbers td {
+  font-size: 30px;
+  border: 1px solid white; /* Borde blanco alrededor de cada número */
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px; /* Añadir un poco de espacio entre el borde y el número */
+}
+
+.highlighted {
+  background-color: red; 
+  color: black;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-container {
+    flex-direction: row; /* Mantén la orientación horizontal en móviles */
+  }
+}
+
+/* ======================AUDIO-PRAYER=========================== */
+.audio-player-container {
+  width: 35%;
+  height: 90%;
+  margin: auto;
+  padding: 10px;
+  border : 1px solid red;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.audio-player-text {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.audio-player-text h2 {
+  padding: 10px 0;
+  color: red;
+  font-size: 3em;
+}
+
+.audio-player-text h3 {
+  padding: 10px 0;
+  font-size: 1.5em;
+  color: red;
+}
+
+.audio-player-text p {
+  padding: 10px 0;
+  font-size: 1em;
+}
+
+.logo-container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-container img {
+  width: 100%;
+ 
+}
+/* =============================modal================================= */
+.modal {
+  width: 70%;
+  height: 70%;
+  background-color: red;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  outline: none;
+}
+.modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: yelow;
+}
+.modal-content h2{
+  padding: 10px;
+  font-size: 4rem;
+}
+.modal-content p{
+  padding: 10px;
+  font-size: 2rem;
+}
+.modal-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+}
+.modal-buttons button {
+  width: 100%;
+  margin: 5px 40px;
+  background-color: red;
+  color: #DEDEDE;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 30px 100px;
+  font-size: 3em; 
+  cursor: pointer;  
+}
+.modal-buttons button:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.959);
+}
+
